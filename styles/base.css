@@ -27,8 +27,8 @@ header {
 	
 	align-items: center;
 	justify-content: center;
-	padding: 20px;
-	border: 1px  rgba(0, 0, 0, 0.1);
+	padding-top: 20px;
+    border: 1px  rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     background-color: #003f6b;
     color: white;
@@ -60,24 +60,21 @@ nav {
 	background-color: #333333;
 	margin: 0 auto;
    	max-width: auto;
-    
+        
 }
 nav ul {
-	/*list-style-type: none;*/
+	list-style-type: none;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     background-color: #020204df;
-    padding: 5px 0;
-    margin-bottom: 20px;
-   
+    padding: 0;
+    margin: 0;
+    
 }
 nav ul li {
     list-style: none;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
+    padding: 0;
+    margin: 0;
 }
 
 nav a {
@@ -97,26 +94,17 @@ nav a:hover {
 aside img {
     width: 200px;
     height: auto;
-    border-radius: 25%;
+    border-radius: 20%;
     margin: 0.5rem;    
 }
-aside h2 {
-    position: absolute;
-    top: 0px;
-    left: 4rem;
-}
+
 /* Class Selectors */
 .highlight {
-    color: #d3f0ed;
-    text-shadow: #ddd;
+    color: #d3f0e6;
     text-shadow: #000;
     font-style: italic;
 }
-.about-content, .location-content {
-    display: flex;
-    flex-direction: column;
-    
-}
+
 .box1, .box2{
     display: flex;
     flex-direction: row;
@@ -130,7 +118,7 @@ aside h2 {
 }
 .cityCentered{
     text-align: center;
-    border-bottom-color: black;
+    padding-top: 10px;
 }
 
 footer {
@@ -160,9 +148,7 @@ footer p {
     text-decoration: none;
     color: #003f6b;
     text-align: left;
-    font-size: larger;
-    padding-left:  10px;
-    
+    font-size: large;
 }
 
 #lastModified {
