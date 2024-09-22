@@ -1,0 +1,177 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+    
+}
+head {
+    display: none;
+}
+
+body {
+    /*display: block;*/
+	font-family: "Roboto", sans-serif;
+    max-width: 1000px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 1rem;
+
+    background-color: #f0f0f0;
+    color: #333;
+    
+    
+}
+
+/* mobile **************************/
+header {
+	
+	align-items: center;
+	justify-content: center;
+	padding: 20px;
+	border: 1px  rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    background-color: #003f6b;
+    color: white;
+    text-align: center;
+}
+main {
+	margin: 0 auto;
+    display: grid;
+    grid-template-columns: 3;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+main ul li {
+    padding-top: 20px;
+    list-style-type: disc;
+    color: black;
+}
+
+h1 {font-size: 2rem;}
+h2 {
+    text-align: center;
+    background-color: #003f6b ;
+    color: white;
+    border-radius: 4px;
+}
+
+nav {
+    display: block;
+	background-color: #333333;
+	margin: 0 auto;
+   	max-width: auto;
+    
+}
+nav ul {
+	/*list-style-type: none;*/
+    display: flex;
+    justify-content: space-around;
+    background-color: #020204df;
+    padding: 5px 0;
+    margin-bottom: 20px;
+   
+}
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a {
+	display: block;
+	color: #fff;
+	text-align: center;
+	padding: 1rem;
+	text-decoration: none;
+}
+
+nav a:hover {
+	text-decoration:underline;
+    font-size: larger;
+    color: rgb(233, 165, 116);
+}
+
+aside img {
+    width: 200px;
+    height: auto;
+    border-radius: 25%;
+    margin: 0.5rem;    
+}
+aside h2 {
+    position: absolute;
+    top: 0px;
+    left: 4rem;
+}
+/* Class Selectors */
+.highlight {
+    color: #d3f0ed;
+    text-shadow: #ddd;
+    text-shadow: #000;
+    font-style: italic;
+}
+.about-content, .location-content {
+    display: flex;
+    flex-direction: column;
+    
+}
+.box1, .box2{
+    display: flex;
+    flex-direction: row;
+    margin:0.5rem;
+    border: none;
+    padding: 0rem;
+    color: #000;
+}
+.box2{
+    background-color: #ddd;
+}
+.cityCentered{
+    text-align: center;
+    border-bottom-color: black;
+}
+
+footer {
+    color: white;
+    padding: 15px;
+    text-align: center;
+    margin-top: 20px;
+    background-color: #003f6b;
+    border-radius: 8px;
+}
+footer p {
+    margin: 5px 0;
+}
+.card {
+    border-radius: 10px;
+    border: solid #ddd;
+    border-width: 2px;
+    overflow: hidden;
+    margin: 3px;
+}
+#aboutMe {
+    grid-column: 1/3;
+   
+}
+#webResources {
+    grid-column: 3/4;
+    text-decoration: none;
+    color: #003f6b;
+    text-align: left;
+    font-size: larger;
+    padding-left:  10px;
+    
+}
+
+#lastModified {
+    color: whitesmoke;
+    font-style: italic;
+    font-size: smaller;
+}
+
+
+
+
+
