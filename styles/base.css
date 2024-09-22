@@ -18,11 +18,8 @@ body {
 
     background-color: #f0f0f0;
     color: #333;
-    
-    
 }
 
-/* mobile **************************/
 header {
 	
 	align-items: center;
@@ -67,14 +64,11 @@ nav ul {
     display: flex;
     justify-content: space-evenly;
     background-color: #020204df;
-    padding: 0;
-    margin: 0;
-    
+ 
 }
 nav ul li {
     list-style: none;
-    padding: 0;
-    margin: 0;
+  
 }
 
 nav a {
