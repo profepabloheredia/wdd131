@@ -1,0 +1,47 @@
+/*@media (min-width: 40rem) {
+    
+    body{
+        
+        width: 100%;
+    }
+
+    #menu {
+        display: none;
+    }
+
+   
+
+    .nav li {
+        display: inline-block;
+        
+    }
+
+    .nav a{
+        color: black;
+        font-weight: 700;
+
+    }
+
+    .image-container{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+    }
+
+    header {
+        position: relative;
+    }
+    
+    h1 {
+        margin: 0;
+    }
+    
+    .nav {
+        position: absolute;
+        top: 3rem;
+        right: 5rem;
+       
+    }
+    
+}
