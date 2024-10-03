@@ -1,13 +1,15 @@
 const mainnav = document.querySelector('nav');
 const hambutton = document.querySelector('#menu');
 
+
 hambutton.addEventListener('click', () =>{
     mainnav.classList.toggle('show');
     hambutton.classList.toggle('show');
-
+    
    
 });
-
+const divElement = document.querySelector('div');
+divElement.innerHTML ="<strong>babygender</strong>";
 
 // Get the current year
 const currentYear = new Date().getFullYear();
