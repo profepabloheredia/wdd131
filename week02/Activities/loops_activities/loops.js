@@ -62,3 +62,6 @@ for (let i = 0; i < studentReport.length; i++) {
     console.log(studentReport[i]);
   }
 }
+const reveal= document.querySelector('div');
+document.appendChild(reveal);
+reveal.innerHTML = `🎉 Congratulations! You are having a <strong>${babygender}</strong>!`;
