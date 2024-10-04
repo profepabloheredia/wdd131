@@ -1,151 +1,10 @@
-/*@media (min-width: 40rem) {
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-
-}
-
-header {
-
-    background: #670992;
-    color: white;
-    font-family: "Oswald", sans-serif;
-
-}
-
-.burger {
-
-    list-style: none;
-    display: none;
-    padding: 0;
-
-
-}
-
-
-.navigate {
-
-    text-align: center;
-    background: #ffffff;
-    width: 800px;
-}
-
-.menu {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    font-family: "Manrope", sans-serif;
-}
-
-.menu li {
-    margin-right: 75px;
-    padding-left: 50px;
-}
-
-a:link {
-    text-decoration: none;
-}
-
-nav {
-
-    padding: 10px;
-    margin: 0 auto;
-    background: #333;
-}
-
-h1 {
-    text-align: center;
-}
-
-.navigate a {
-    flex: 1 1 100%;
-}
-
-nav a:link,
-nav a:visited {
-    color: white;
-    text-decoration: none;
-}
-
-nav a:hover {
-    background: radial-gradient(#530985fb, #7b7a7a);
-    border-width: 10px;
-    padding: 10px;
-
-}
-
-h2 {
-
-    font-family: "Oswald", sans-serif;
-    margin: 0 auto;
-    font-weight: 500;
-    font-style: normal;
-}
-
-h2 {
-
-    text-align: center;
-}
-
-.main {
-    display: grid;
-    gap: 0px;
-    max-width: 800px;
-    margin: 0 auto;
-    padding-left: 4px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-
-}
-
-.images {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-    max-width: 900px;
-    width: 100%;
-    margin: 0 auto;
-}
-
-
-figure {
-
-    margin: auto;
-    width: 200px;
-    margin: auto;
-
-}
-
-figcaption {
-    color: #000000;
-    text-align: center;
-}
-
-.main p {
-    padding-top: 10px;
-}
-}
-
-*/
-
-
-
-
-
-
-
-
-
 @media (min-width: 600px) {
     
     * {
         box-sizing: border-box;
         margin: 0;
         padding: 0;
-    
-    }
+        }
     
     body{
         
@@ -185,19 +44,6 @@ figcaption {
         border-radius: 10%;
         
     }
-
-    /*.nav a{
-        color: black;
-        font-weight: 700;
-
-    }
-
-    .image-container{
-        width: 100%;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 10px;
-    }*/
 
     header {
         position: relative;
