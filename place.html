@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Pablo Heredia">
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Pablo Heredia">
+    <title>WDD 131: Dynamic Web Fundamentals - Pablo A. Heredia</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/place.css">
+    <!-- <link rel="stylesheet" href="styles/place-large.css"> -->
+    <script src="scripts/place.js" defer></script>
+
+</head>
+<body>
+    <header>
+        <h1>ARGENTINA</h1>   
+    </header>
+    
+    <main>
+
+        <section class="hero">
+            <picture>
+                <source media="(max-width: 649px)" srcset="images/glaciares_closer.webp">
+                <source media="(min-width: 650px)" srcset="images/glaciares_wide_large.webp">
+                <img src="images/glaciares_closer.webp" alt="Glaciares Park"  width= "500" >
+            </picture>
+        </section>
+                   
+        <div class="data">
+            <h2>Data</h2>
+            <div class="info">
+                <p class:"label">Area:</p><span class:"value">2.780.085 sq km</span>
+                <p class:"label">Population:</p><span class:"value">"47 millions"</span>
+                <p class:"label">Capital:</p><span class:"value">"Buenos Aires"</span>
+                <p class:"label">Language:</p><span class:"value">"Latin Spanish"</span>
+                <p class:"label">Currency:</p><span class:"value">"Argentinian Peso"</span>
+                <p class:"label">Time Zone:</p><span class:"value">"UTC-3"</span>
+                <p class:"label">Calling Code:</p><span class:"value">"+54"</span>
+                <p class:"label">Internet TLD:</p><span class:"value">".ar"</span>
+               
+            </div>
+        </div>       
+        <div class="weather">
+            <h2>Weather<img src="images/cloud_sun_icon.svg" alt="weather-icon"></h2>
+            
+            <div class="info">
+                <P class:"label">Temperature:</P><span class:"value">25°C</span>
+                <P class:"label">Conditions:</P><span class:"value">Sunny, Partly Cloudy</span>
+                <P class:"label">Wind:</P><span class:"value">10 km/h</span>
+                <P class:"label">Wind Chill:</P><span class:"value" id="wind-Chill"></span>
+               
+            </div>
+        </div>    
+                         
+    </main>
+          
+    <footer>
+        <p>&copy; <span id="currentyear"></span> ✨ Pablo Heredia ✨ Cordoba, Argentina</p>
+        <p id="lastModified"></p>
+        <script src="scripts/getdates.js" defer></script>
+    </footer>
+    
+</body>
+</html>
+
+

@@ -1,0 +1,150 @@
+
+:root {
+    --primary-color:#3269ff;
+    /* --primary-color:#3287ff; */
+    --secondary-color: #2400a8;
+    --text-color:black;
+    --background-color: white;
+    --label-size:'larger';
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* display: flex;
+    flex-direction: column; 
+    align-items: center;
+    width: 500px;
+    font-family: "Roboto";
+    font-weight: 400;
+    font-style: normal; */
+    max-width: 1200px;
+    align-items: center;
+    font-family: "Roboto";
+    font-weight: 400;
+    font-style:normal;
+    line-height: 1.8;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 0.5rem;
+
+    width: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+main {
+    padding: .5rem;
+  
+}
+.info {
+    width: 350px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+}
+.data p, .weather p {
+    text-align: right;
+    text-decoration:solid;
+    font-size: var(--label-size);
+    font-weight: bold;
+    padding-right: .5rem;
+}
+.info span, .weather span {
+    text-align: left;
+    text-decoration:solid;
+    font-size: medium;
+    padding-left: .5rem;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+.data, .weather {
+    margin-top: 1rem;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem;
+}
+ .weather p{
+    display: flex;
+    flex-direction: column;
+    
+} 
+
+.weather img {
+    width: 10%;
+    height: auto;
+}
+
+
+h2 {
+    font-family: "Roboto";
+    
+    color: var(--secondary-color);
+    text-align: center;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+@media screen and (min-width: 650px) {
+    .hero{
+        position: relative;
+    }
+    .data , .weather{
+        position: absolute;
+       
+    }
+    .data{
+        top:150px;
+        left: 20px;
+    }
+
+    .weather{
+        bottom: 150px;
+        right: 20px;
+    }
+
+    h2.weather::after {
+        content: '⛅'; 
+        font-size: 2rem;
+        margin-left: 10px;
+        position: relative;
+        top: 10px; 
+    }
+    
+    /* main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+
+    .hero {
+        grid-column: 1 / -1;
+    }
+
+    .weather h2::after {
+        margin-left: 0.5rem;
+    } */
+}
