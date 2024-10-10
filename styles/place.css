@@ -2,6 +2,8 @@
 :root {
     --primary-color:#3269ff;
     --secondary-color: #2400a8;
+    --text-title-color:white;
+    --subtitle-color:#2400a8;
     --text-color:black;
     --background-color: white;
     --label-size:'larger';
@@ -9,45 +11,38 @@
 *{
     padding: 0;
     margin: 0;
-    /* box-sizing: border-box; */
+    box-sizing: border-box;
 }
 
 body {
     /* display: flex;
     flex-direction: column; 
-    align-items: center;
-    width: 500px;
-    font-family: "Roboto";
-    font-weight: 400;
-    font-style: normal; */
-    /* min-width: 150px; */
+    align-items: center;*/
+   
     max-width: 1500px;
     width: auto;
     align-items: center;
     font-family: "Roboto";
     font-weight: 400;
     font-style:normal;
-    line-height: 1.8;
+    line-height: 1.5;
     color: var(--text-color);
     background-color: var(--background-color);
     margin: 0;
     padding: 0;
 }
-
-header {
+header, footer{
     background-color: var(--primary-color);
-    color: white;
+    color: var(--text-title-color);
     text-align: center;
-    /* width: 100%; */
+    padding: 0.5rem;
+}
+header {
     font-size: 1.5rem;
 }
 
-main {
-    /* width: 100%; */
-  
-}
 .info {
-    /* width: auto; */
+    
     display: grid;
     grid-template-columns: 1fr 1fr;  
 }
@@ -64,84 +59,39 @@ main {
     font-size: medium;
     padding-left: .5rem;
 }
-
 .hero img {
     width: 100%;
     height: auto;
 }
 .data, .weather {
-    margin-top: 1rem;
     text-align: center;
-
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 1rem;
 }
- .weather p{
+ /* .weather p{
     display: flex;
     flex-direction: column;
     
-} 
+}  */
 
 .weather img {
-    width: 10%;
+    width: 40%;
     height: auto;
 }
-
+.weather-title{
+    display: flex;
+    flex-direction: row;
+}
 
 h2 {
     font-family: "Roboto";
-    
-    color: var(--secondary-color);
+    color: var(--subtitle-color);
     text-align: center;
+    font-size: xx-large;
 }
 
 footer {
-    background-color: var(--primary-color);
-    color: white;
-    text-align: center;
-    padding: 0.5rem;
-    margin-top: 0.5rem;
-}
-
-@media screen and (min-width: 501px) {
-    .hero{
-        position: relative;
-    }
-    .data , .weather{
-        position: absolute;
-       
-    }
-    .data{
-        top:150px;
-        left: 20px;
-    }
-
-    .weather{
-        bottom: 150px;
-        right: 20px;
-    }
-
-    h2.weather::after {
-        content: '⛅'; 
-        font-size: 2rem;
-        margin-left: 10px;
-        position: relative;
-        top: 10px; 
-    }
-    
-    /* main {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 1rem;
-    }
-
-    .hero {
-        grid-column: 1 / -1;
-    }
-
-    .weather h2::after {
-        margin-left: 0.5rem;
-    } */
+    margin-top: 1rem;
 }
