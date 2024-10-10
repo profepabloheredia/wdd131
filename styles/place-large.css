@@ -66,4 +66,8 @@
     footer{
         margin-top: 0%;
     }
+    .weather img::after {
+        padding-left: 2rem;
+        
+    }
 }
