@@ -1,4 +1,3 @@
-
 :root {
     --primary-color:#3269ff;
     --secondary-color: #2400a8;
@@ -19,8 +18,9 @@ body {
     flex-direction: column; 
     align-items: center;*/
    
-    max-width: 1500px;
+    /* max-width: 1500px; */
     width: auto;
+
     align-items: center;
     font-family: "Roboto";
     font-weight: 400;
@@ -42,7 +42,6 @@ header {
 }
 
 .info {
-    
     display: grid;
     grid-template-columns: 1fr 1fr;  
 }
@@ -70,21 +69,20 @@ header {
     align-items: center;
     margin: 1rem;
 }
- /* .weather p{
+
+
+.weather-title{
     display: flex;
     flex-direction: column;
-    
-}  */
-
+    align-items: center;
+    text-align: center;
+    align-content: center;
+}
 .weather img {
+    display: block;
     width: 40%;
     height: auto;
 }
-.weather-title{
-    display: flex;
-    flex-direction: row;
-}
-
 h2 {
     font-family: "Roboto";
     color: var(--subtitle-color);

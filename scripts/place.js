@@ -10,10 +10,10 @@ function calculateWindChill(temp, windSpeed){// the temp must to be in fahrenhei
     }
 }
 
-const celsius = 5;//Celcius degree
+const temp = 5;//Celcius degree
 const windSpeed = 10;// km/h
 
-const temp = (celsius * (9/5)) + 32;// covert to fahrenheit
+// const temp = (celsius * (9/5)) + 32;// covert to fahrenheit
 
 const windChill= calculateWindChill(temp, windSpeed);
 document.getElementById('wind-Chill').textContent = typeof windChill === 'number' ? windChill.toFixed(1) + "°C" : windChill;
