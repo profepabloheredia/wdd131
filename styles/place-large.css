@@ -22,7 +22,7 @@
     }
     .weather{
         width: 240px;
-        bottom: 16%;
+        bottom: 30%;
         right: 4px;
     } 
     
@@ -51,16 +51,19 @@
         height: auto;
         
     }
+    footer{
+        margin-top: 0%;
+    }
 }
 @media screen and (min-width: 850px) {
     .weather{
-        bottom: 8%;
+        bottom: 15%;
         right: 4px;
     } 
 }
 @media screen and (min-width: 950px) {
     .weather{
-        bottom: 0%;
+        bottom: 5%;
         right: 4px;
     } 
 }

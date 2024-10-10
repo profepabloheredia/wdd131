@@ -6,7 +6,7 @@
     --subtitle-color:#2400a8;
     --text-color:black;
     --background-color: white;
-    --label-size:'larger';
+   
 }
 *{
     padding: 0;
@@ -49,7 +49,7 @@ header {
 .data p, .weather p {
     text-align: right;
     text-decoration:solid;
-    font-size: var(--label-size);
+    font-size: large;
     font-weight: bold;
     padding-right: .5rem;
 }
