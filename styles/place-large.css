@@ -1,4 +1,4 @@
-
+@media (min-width: 501px) {
 
 :root{
     --primary-color: yellow;
@@ -80,7 +80,7 @@ footer p{
 }
 
     
-@media (min-width: 640px) {
+
 
     header, footer, h2{
         background-color: var(--secondary-color);

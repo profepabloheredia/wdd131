@@ -1,7 +1,6 @@
 
 :root {
     --primary-color:#3269ff;
-    /* --primary-color:#3287ff; */
     --secondary-color: #2400a8;
     --text-color:black;
     --background-color: white;
@@ -10,7 +9,7 @@
 *{
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
 }
 
 body {
@@ -21,7 +20,9 @@ body {
     font-family: "Roboto";
     font-weight: 400;
     font-style: normal; */
-    max-width: 1200px;
+    /* min-width: 150px; */
+    max-width: 1500px;
+    width: auto;
     align-items: center;
     font-family: "Roboto";
     font-weight: 400;
@@ -37,22 +38,18 @@ header {
     background-color: var(--primary-color);
     color: white;
     text-align: center;
-    padding: 0.5rem;
-
-    width: 100%;
-    text-align: center;
+    /* width: 100%; */
     font-size: 1.5rem;
 }
 
 main {
-    padding: .5rem;
+    /* width: 100%; */
   
 }
 .info {
-    width: 350px;
+    /* width: auto; */
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    
+    grid-template-columns: 1fr 1fr;  
 }
 .data p, .weather p {
     text-align: right;
@@ -108,7 +105,7 @@ footer {
     margin-top: 0.5rem;
 }
 
-@media screen and (min-width: 650px) {
+@media screen and (min-width: 501px) {
     .hero{
         position: relative;
     }
