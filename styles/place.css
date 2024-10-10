@@ -93,4 +93,8 @@ h2 {
 footer {
     margin-top: 1rem;
 }
+.weather img::after {
+    padding-top: 1rem;
+    
+}
 
