@@ -1,0 +1,15 @@
+main{
+    margin: 0  auto;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+}
+.images {
+    display: block;
+    size: 100%;
+    background-color: white;
+}
+h1{
+    text-align: center;
+    animation: fade 15s;
+}
