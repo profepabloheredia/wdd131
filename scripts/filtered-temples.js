@@ -168,6 +168,7 @@ function createTemplesCards(filteredTemples) {
     card.appendChild(dedication);
     card.appendChild(area);
     card.appendChild(img);
+    card.classList.add('temple-card');
     document.querySelector(".images").appendChild(card);
   });
 }
