@@ -100,9 +100,10 @@ footer{
     width: 100%;
     margin: 0 auto;
     margin-top: 1rem;
+      
  }
  
-figure {
+/* figure {
     width: 300px;
     height: auto;
     margin: auto;
@@ -114,6 +115,12 @@ figure img {
 figcaption {
     color: #000000;
     text-align: center;
+} */
+
+
+h3{
+    font-size: large;
+    margin-bottom: 0.5rem;
 }
 .temple-card {
     border: 1px solid #ccc;
@@ -121,6 +128,7 @@ figcaption {
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     background-color: #dee9f5;
+    max-width: 300px;
  
   }
 .temple-card img {
@@ -131,7 +139,16 @@ figcaption {
     margin-top: 1rem ;
     border-style:ridge;
   }
- @media (max-width: 600px) {
+.temple-card p, .label{
+   
+    padding: 2px;
+    margin: 0%;
+    font-size: small;
+}
+.label{
+    font-weight: bold;
+}
+@media (max-width: 600px) {
     
     .navigate {
         position: absolute;

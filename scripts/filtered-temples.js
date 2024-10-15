@@ -82,6 +82,15 @@ const temples = [
         "https://churchofjesuschristtemples.org/assets/img/temples/belo-horizonte-brazil-temple/belo-horizonte-brazil-temple-22100-thumb.jpg"
         
       },
+      {
+        templeName: "Antofagasta Chile Temple",
+        location: "Antofagasta, Chile",
+        dedicated: "2020, November, 27",
+        area: 23000,
+        imageUrl:
+        "https://churchofjesuschristtemples.org/assets/img/temples/antofagasta-chile-temple/antofagasta-chile-temple-12069-thumb.jpg"
+        
+      },
     // Add more temple objects here...
 ];
 
