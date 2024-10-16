@@ -2,8 +2,7 @@
    .hero{
         position: relative;
     }
-    .data , .weather{
-        
+    .data , .weather{ 
         font-size:smaller;
         position: absolute;
         background-color: white;
@@ -13,8 +12,7 @@
         margin:  0;
         padding-left: 5px;
         padding-right: 5px;
-        line-height: 1;
-        
+        line-height: 1;    
     }
     .data{
         width: 250px;
@@ -29,7 +27,6 @@
         top: 300PX;
         right: 4px;
     } 
-    
     h2{
         font-size: x-large;
         color: rgb(255, 255, 255);
@@ -37,8 +34,6 @@
         height: 35px;
         background-color: darkblue;   
         border-style:ridge;
-    
-        
     }
     .data h2{
         left: 0;
@@ -51,23 +46,17 @@
         opacity: 100%;
         padding-left: .5rem;
     }
-    .weather-title{
-        display: flex;
-        flex-direction: row;
+    #weather-icon{
+        display: none;
     }
-    .weather img {
-        display:block;
-        width: 32px;
-        height: auto;
-    }
+    .weather-text::after{
+       content: ' ⛅';
+       ;
+    } 
     main{
         margin-bottom: 0%;
     }
     footer{
         margin-top: 0%;
-    }
-    .weather img::after {
-        padding-left: 2rem;
-        
     }
 }
