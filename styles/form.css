@@ -1,0 +1,160 @@
+:root {
+    --primary-color:black;
+    --secondary-color: #2400a8;
+    --text-title-color:white;
+    --subtitle-color:#2400a8;
+    --text-color:black;
+    --stars-color:darkgreen;
+    --background-color: rgb(223, 223, 223);
+   
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    max-width: 800px;
+    margin: auto;
+    display: flex;
+    flex-direction: column; 
+    width: 400px;
+    font-family: "Roboto", sans-serif;
+    
+}
+header,footer {  
+    margin: 0 auto;
+    padding: 1rem;
+    background-color: var(--primary-color);
+    color: var(--text-title-color);
+    width: 100%;
+}
+header{
+    display: flex;
+    flex-direction: column;
+	align-items:center;
+	padding: 2px;
+    margin-bottom: 1rem;
+    
+}
+header h1{
+    padding: 1rem;
+    font-size: 2rem;   
+}
+
+form{
+    background-color: var(--background-color);
+    padding: 1.5rem;
+    padding-top: 0%;
+    padding-bottom: 0%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+
+.formreview label {
+    display: block;
+    padding-top: 1rem;
+}
+.formreview input[type="text"],
+.formreview input[type="date"],
+.formreview select,
+.formreview textarea
+ {
+    display: block;
+    padding: .75rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 400px;
+}
+.formreview input[type="checkbox"] {
+    margin-right: 5px;
+    padding-top: 0% ;
+}
+.formreview span {
+    color: var(--subtitle-color);
+    font-style: italic;
+}
+
+/* .rating {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 400px;
+    padding-top: 0% !important;
+} */
+
+.formreview input[type="submit"]{
+   
+    max-width: 400px;
+    padding: .75rem;
+    border-radius: 3px;
+    margin: 2rem 0%;
+    font-size: large;
+    background-color: beige;
+
+}
+
+footer{
+    margin-top: 1rem;
+    text-align: center;
+    font-weight: 400;
+}
+
+/* stars */
+input[type="radio"] {
+	display: none;
+	position: relative;
+	caret-color: rgba(0, 0, 0, 0);
+}
+
+.stars {
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: left;
+     
+}
+
+.stars > label {
+	color: var(--stars-color);
+    /* color: gold; */
+	width: 30px;
+	height: 30px;
+	font-size: 2rem;
+	margin-left: 5px;
+	display: flex;
+	align-items: center;
+	caret-color: rgba(0, 0, 0, 0); /* remove blinking cursor*/
+    padding-top: 0%;
+    margin-top: 0;
+}
+
+.stars > label:hover {
+	color: #000;
+}
+
+.stars > label::before {
+	content: "\2606";
+}
+
+.stars input:checked ~ label::before {
+	content: "\2605";
+}
+
+@media (max-width: 600px) {
+    
+    /* .navigate {
+        position: absolute;
+        top: 4.5rem;
+        left: 0rem;
+    }
+    .navigate a{
+        display: none;
+    }
+    .show a{
+        display: block;
+    } */
+}

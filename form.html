@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Pablo Heredia">
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Pablo Heredia">
+    <title>WDD 131: Dynamic Web Fundamentals - Pablo A. Heredia</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/form.css">
+    
+    <script src="scripts/form.js" defer></script>
+
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>   
+    </header>
+    <main>
+        <form action="review.html" method="get" class="formreview">
+            
+            <label>Product Name </label>
+            <select name="ProductName" id="ProductName" required>
+                <option disabled selected value="">Choose a Product ...</option>
+            </select>
+            
+                 
+            <label>Overall Rating </label>
+            <div class="stars">
+                <input type="radio" id="fivestar" name="rating" value="5" required><label for="fivestar"></label>
+                <input type="radio" id="fourstar" name="rating" value="4" required><label for="fourstar"></label>
+                <input type="radio" id="threestar" name="rating" value="3" required><label for="threestar"></label>
+                <input type="radio" id="twostar" name="rating" value="2" required><label for="twostar"></label>
+                <input type="radio" id="onestar" name="rating" value="1" required><label for="onestar"></label>
+            </div>
+            
+          
+                <label>Date of Installation </label>
+                <input type="date" id="date" name="date" required>
+           
+            <label>Which features did you find useful in the product?<br>(Check all
+                that apply)</label>
+
+              <label><input type="checkbox" name="durability" id="durability" value="yes">Durability</label>
+              <label><input type="checkbox" name="easeOfUse" id="easeofuse" value="yes">Ease of Use</label>
+              <label><input type="checkbox" name="performance" id="performance" value="yes">Performance</label>
+              <label><input type="checkbox" name="design" id="design" value="yes">Design</label>
+
+              <label>Written Review <span>(Optional)</span><textarea name="Written" id="writtenreview" cols="30" rows="5"></textarea>
+              </label>
+        
+              <label>Your Name <span>(Optional)</span><input type="text" name="name" id="name"></label>
+        
+              <input type="submit" value="Post Review">
+
+        </form>
+              
+    </main>
+          
+    <footer>
+        <p>&copy; <span id="currentyear"></span> ✨ Pablo Heredia ✨ Cordoba, Argentina</p>
+        <p id="lastModified"></p>
+        <script src="scripts/getdates.js" defer></script>
+    </footer>
+    
+</body>
+</html>
+
+
