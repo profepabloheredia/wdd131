@@ -1,0 +1,51 @@
+:root {
+    --primary-color:#3269ff;
+    --secondary-color: #2400a8;
+    --text-title-color:white;
+    --subtitle-color:#2400a8;
+    --text-color:black;
+    --background-color: white;
+   
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 1000px;
+    width: auto;
+    align-items: center;
+    font-family: "Roboto";
+    font-weight: 400;
+    font-style:normal;
+    line-height: 1.5;
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+main{    
+    margin: 1rem;
+    padding: 1rem;
+}
+header, footer{
+    background-color: var(--primary-color);
+    color: var(--text-title-color);
+    text-align: center;
+    padding: 0.5rem;
+}
+header {
+    font-size: 1.5rem;
+}
+
+
+h2 {
+    font-family: "Roboto";
+    color: var(--subtitle-color);
+    text-align: center;
+    font-size: xx-large;
+}
+
+footer {
+    margin-top: 1rem;
+}
