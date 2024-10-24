@@ -21,7 +21,8 @@
         <h2 class="title">BMI / IMC CALCULATOR</h2>
            
         <div class="hero">
-            <h4>The Body Mass Index (BMI) is a tool that is often used as a surrogate measure of body fat, and can screen for obesity and associated health risks</h4>
+            <h4>The Body Mass Index (BMI) is a tool that is often used as a surrogate measure of body fat, 
+                and can screen for obesity and associated health risks</h4>
             <picture>
                 <source media="(min-width: 650px)" srcset="images/body-measure.jpeg">
                 <img src="images/body-measure-small.jpeg" alt="Body Measure image"  width="150" >
@@ -34,23 +35,29 @@
         
         <form action="result.html" method="post" class="formrcalculate">
             <div class="entries">
-                <label for="weight">Weight  </label><input type="text" name="weight" id="weight" required><span id="weight-unit"> lb.</span><br>
+                <label for="weight">Weight  </label><input type="text" name="weight" id="weight" width="30px"><span id="weight-unit"> lb.</span><br>
                 <label for="height">Height  </label><input type="text" name="height" id="height" required><span id="height-unit"> in.</span><br>
                 <label for="weight">Weight  </label><input type="text" name="weight" id="weight" required><span id="weight-unit"> lb.</span><br>
                 <label for="metric">Metric</label><input type="radio" id="metric" name="metric" value="2" required>
                 <label for="imperial">Imperial</label><input type="radio" id="imperial" name="imperial" value="" required><br>
             </div>
             <div class="results">
-
+                <h4>BMI</h4>
+                <p></p>
+                <h4>Clasification</h4>
+                <p></p>
             </div>
-            <input type="submit" value="Calculate BMI" id="submitButton">
+            <div class="submit">
+                <input type="submit" value="Calculate BMI" id="submitButton">     
+            </div>
+            
 
         </form>
         
         <section>
             <ul>
-                <li><a href="https://codepen.io/">See all BMI table <i>(External site)</i></a></li>
-                <li><a href="https://www.w3schools.com/">Understanding your BMI results<i>(External site)</i></a></li>
+                <li><a href="bmi-table.html">See all BMI table </a></li>
+                <li><a href="bmi-results-understanding.html">Understanding your BMI results</a></li>
             </ul>
         </section>
         
