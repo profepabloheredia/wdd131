@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Pablo Heredia">
+    <meta name="description" content="BMI-project Pablo A. Heredia">
+    <title>BMI-project Pablo A. Heredia</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/bmi-project.css">
+    <!-- <link rel="stylesheet" href="styles/temples-large.css"> -->
+    <script src="scripts/bmi-project.js" defer></script>
+
+</head>
+<body>
+    <header>
+        <h2 class="title">BMI / IMC CALCULATOR</h2>
+           
+        <div class="hero">
+            <h4>The Body Mass Index (BMI) is a tool that is often used as a surrogate measure of body fat, and can screen for obesity and associated health risks</h4>
+            <picture>
+                <source media="(min-width: 650px)" srcset="images/body-measure.jpeg">
+                <img src="images/body-measure-small.jpeg" alt="Body Measure image"  width="150" >
+            </picture>
+        </div>
+      
+    </header>
+    
+    <main class ="main">
+        
+        <form action="result.html" method="post" class="formrcalculate">
+            <div class="entries">
+                <label for="weight">Weight  </label><input type="text" name="weight" id="weight" required><span id="weight-unit"> lb.</span><br>
+                <label for="height">Height  </label><input type="text" name="height" id="height" required><span id="height-unit"> in.</span><br>
+                <label for="weight">Weight  </label><input type="text" name="weight" id="weight" required><span id="weight-unit"> lb.</span><br>
+                <label for="metric">Metric</label><input type="radio" id="metric" name="metric" value="2" required>
+                <label for="imperial">Imperial</label><input type="radio" id="imperial" name="imperial" value="" required><br>
+            </div>
+            <div class="results">
+
+            </div>
+            <input type="submit" value="Calculate BMI" id="submitButton">
+
+        </form>
+        
+        <section>
+            <ul>
+                <li><a href="https://codepen.io/">See all BMI table <i>(External site)</i></a></li>
+                <li><a href="https://www.w3schools.com/">Understanding your BMI results<i>(External site)</i></a></li>
+            </ul>
+        </section>
+        
+        
+    </main>
+        
+    
+
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> ✨ Pablo Heredia ✨ Cordoba, Argentina</p>
+        <p id="lastModified"></p>
+    </footer>
+    
+</body>
+</html>
