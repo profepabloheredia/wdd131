@@ -18,7 +18,7 @@
 }
 body{
    max-width: 500px;
-    width: 310px; 
+    width: 350px; 
 }
 header, footer, main{
     text-align: center;
@@ -63,7 +63,7 @@ img{
 .entries{
     grid-column: 1;
     display: grid;
-    grid-template: 1fr 1fr 1fr 1fr / 50px 1.5fr 1fr  ;
+    grid-template: 1fr 1fr 1fr 1fr / 60px 2fr 1fr  ;
     align-items: center;
     text-align: left;
       
@@ -75,7 +75,7 @@ img{
 }
 .entries input[type="text"]{
     grid-column: 2;
-    width: 35px;
+    width: 40px;
     height:5px;
     display: block;
     padding: .5rem;
