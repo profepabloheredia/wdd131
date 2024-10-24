@@ -25,7 +25,7 @@
                 and can screen for obesity and associated health risks</h4>
             <picture>
                 <source media="(min-width: 650px)" srcset="images/body-measure.jpeg">
-                <img src="images/body-measure-small.jpeg" alt="Body Measure image"  width="150" >
+                <img src="images/body-measure-small.jpeg" alt="Body Measure image"  loading="lazy" width="150" >
             </picture>
         </div>
       
@@ -34,24 +34,25 @@
     <main class ="main">
         
         <form action="result.html" method="post" class="formrcalculate">
-            <div class="entries">
-                <label for="weight">Weight  </label><input type="text" name="weight" id="weight" width="30px"><span id="weight-unit"> lb.</span><br>
-                <label for="height">Height  </label><input type="text" name="height" id="height" required><span id="height-unit"> in.</span><br>
-                <label for="weight">Weight  </label><input type="text" name="weight" id="weight" required><span id="weight-unit"> lb.</span><br>
-                <label for="metric">Metric</label><input type="radio" id="metric" name="metric" value="2" required>
-                <label for="imperial">Imperial</label><input type="radio" id="imperial" name="imperial" value="" required><br>
-            </div>
-            <div class="results">
-                <h4>BMI</h4>
-                <p></p>
-                <h4>Clasification</h4>
-                <p></p>
+            <div class="form">
+                <div class="entries">
+                    <label for="weight">Weight  </label><input type="text" name="weight" id="weight" required><span id="weight-unit"> lb.</span>
+                    <label for="height">Height  </label><input type="text" name="height" id="height" required><span id="height-unit"> in.</span>
+                    <label for="age">Age  </label><input type="text" name="age" id="age" required><span id="age-unit"> years.</span>
+                    <label for="metric" class="radios">Metric  </label><input type="radio" id="metric" name="metric" value="1" required>
+                    <label for="imperial" class="radios">Imperial  </label><input type="radio" id="imperial" name="imperial" value="2" required>
+                </div>
+                <div class="results">
+                    <h4>BMI</h4>
+                    <p></p>
+                    <h4>Clasification</h4>
+                    <p></p>
+                </div>
+                
             </div>
             <div class="submit">
-                <input type="submit" value="Calculate BMI" id="submitButton">     
-            </div>
-            
-
+                    <input type="submit" value="Calculate BMI" id="submitButton">     
+                </div>
         </form>
         
         <section>
