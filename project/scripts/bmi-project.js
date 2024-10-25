@@ -26,28 +26,28 @@ function calculate(){
 
     if (unit=="metric"){
         height = height / 100;
-        bmi = (weight / (height * height)).toFixed();
+        bmi = (weight / (height * height)).toFixed(1);
     }else{
         bmi = weight / (height * height);
-        bmi = (bmi * 703).toFixed();
+        bmi = (bmi * 703).toFixed(1);
     }
     
-    bmivalue.innerText= bmi||0;
-
     if (bmi >= 40) {
         clasification="Obesity Class III";
     }else if(bmi > 35 ){
         clasification="Obesity Class II";
-    }else if(bmi > 30.1 ){
+    }else if(bmi > 30){
         clasification="Obesity Class I";
     }else if(bmi > 25 ){
         clasification="Overweight";
     }else if(bmi >= 18.5 ){
         clasification="Normal Weight";
     }else {
-        clasification="Underweight";
-        
+        clasification="Underweight";  
     }
+
+
+    bmivalue.innerText= bmi;
     clasificationtext.innerText= clasification;
     // alert (bmi);
 }
