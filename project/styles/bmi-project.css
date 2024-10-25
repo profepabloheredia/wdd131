@@ -11,14 +11,13 @@
    
 }
 
-
 * {
     margin: 0%;
     padding: 0%;
 }
 body{
-   max-width: 500px;
-    width: 350px; 
+    max-width: auto;
+    width: 400px; 
 }
 header, footer, main{
     text-align: center;
@@ -63,7 +62,7 @@ img{
 .entries{
     grid-column: 1;
     display: grid;
-    grid-template: 1fr 1fr 1fr 1fr / 60px 2fr 1fr  ;
+    grid-template: 1fr 1fr 1fr 1fr / 1fr 2fr 1fr  ;
     align-items: center;
     text-align: left;
       

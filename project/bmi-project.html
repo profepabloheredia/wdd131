@@ -36,22 +36,24 @@
         <form action="result.html" method="post" class="formrcalculate">
             <div class="form">
                 <div class="entries">
-                    <label for="weight">Weight  </label><input type="text" name="weight" id="weight" required><span id="weight-unit"> lb.</span>
-                    <label for="height">Height  </label><input type="text" name="height" id="height" required><span id="height-unit"> in.</span>
+                    <label for="weight">Weight  </label><input type="text" name="weight" id="weight" required><span id="weight-unit"> kg.</span>
+                    <label for="height">Height  </label><input type="text" name="height" id="height" required><span id="height-unit"> cm.</span>
                     <label for="age">Age  </label><input type="text" name="age" id="age" required><span id="age-unit"> years.</span>
-                    <label for="metric" class="radios">Metric  </label><input type="radio" id="metric" name="metric" value="1" required>
-                    <label for="imperial" class="radios">Imperial  </label><input type="radio" id="imperial" name="imperial" value="2" required>
+                    <label for="metric" class="radios">Metric  </label>
+                    <input type="radio" id="metric" name="metric" value="1" onclick="units()" checked>
+                    <label for="imperial" class="radios">Imperial  </label>
+                    <input type="radio" id="imperial" name="metric" value="2" onclick="units()">
                 </div>
                 <div class="results">
                     <h4>BMI</h4>
-                    <p></p>
+                    <h3 id="bmivalue"></h3>
                     <h4>Clasification</h4>
-                    <p></p>
+                    <h3 id="clasification"></h3>
                 </div>
                 
             </div>
             <div class="submit">
-                    <input type="submit" value="Calculate BMI" id="submitButton">     
+                    <input type="submit" value="Calculate BMI" id="submitButton" onclick="calculate()">     
                 </div>
         </form>
         
