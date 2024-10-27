@@ -132,5 +132,7 @@ footer{
 
 .left   {
     text-align: left;
+    display:flex;
+    flex-direction: column 1fr 1fr ;
     
 }

@@ -6,6 +6,7 @@ const bmivalue = document.getElementById("bmivalue");
 const clasificationtext = document.getElementById("clasification");
 const results = document.getElementById("results");
 let unit ="metric";
+let bmi;
 
 
 function units(){
@@ -34,7 +35,7 @@ function calculate(){
     
     let weight = parseInt(document.getElementById("weight").value)||0;
     let height = parseInt(document.getElementById("height").value)||0;
-    let bmi;
+    
     let clasification;
     if (weight && height !=0){
 
@@ -101,16 +102,23 @@ function calculate(){
 
         bmivalue.innerText= bmi;
         clasificationtext.innerText= clasification;
+        window.localStorage.setItem("bmi", bmi);
+        
     }
     
         // alert (bmi);
 }
+function get_bmi() {
+   bmi= window.localStorage.getItem("bmi")||0;
+   const bmivalue2 = document.getElementById("bmivalue2");
+    bmivalue2.innerText=bmi
+    alert(bmi);
 
-
-
-
+}
 //footer content
 document.getElementById("currentyear").textContent = new Date().getFullYear();
 document.getElementById("lastModified").textContent = "Last modified: " + document.lastModified;
 
 // The formula is BMI = kg/m2;
+
+//https://www.truthaboutweight.global/global/en/managing-your-weight/whats-your-body-mass-index-bmi/bmi-result-obesity-I.html?bmiVal=33.33&classification=truthaboutweight%3Ataxonomy%2Fbmi%2Ftype%2Fobesity-i#what-does-this-mean-for-you
