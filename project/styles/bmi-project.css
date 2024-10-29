@@ -154,7 +154,11 @@ section li{
     text-align: left;
     display:flex;
     flex-direction: column 1fr 1fr ;
-    
+}
+.text-list { 
+    text-align: left;
+    padding: var(--padding);
+    margin: var(--margin);
 }
 footer{
    border-bottom-left-radius: var(--border-radius);
