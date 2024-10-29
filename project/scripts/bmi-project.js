@@ -3,7 +3,8 @@ const heightlabel = document.getElementById("height-unit");
 const weightbox = document.getElementById("weight");
 const heightbox = document.getElementById("height");
 const bmivalue = document.getElementById("bmivalue");
-const clasificationtext = document.getElementById("clasification");
+const clasificationtext = document.getElementById("clasificationtext");
+const clasificationbox = document.getElementById("clasificationbox");
 const results = document.getElementById("results");
 let unit ="metric";
 let bmi;
@@ -48,65 +49,40 @@ function calculate(){
         }
         if (bmi >= 40) {
             clasification="Obesity Class III";
-            results.style.background="#820e11";
-            results.style.color="white";
+            clasificationbox.style.background="#820e11";
+            clasificationbox.style.color="white";
 
         }else if(bmi > 35 ){
             clasification="Obesity Class II";
-            results.style.background="#e85e3f";
-            results.style.color="white";
+            clasificationbox.style.background="#e85e3f";
+            clasificationbox.style.color="white";
         }else if(bmi > 30){
             clasification="Obesity Class I";
-            results.style.background="#ee8260";
-            results.style.color="black";
+            clasificationbox.style.background="#ee8260";
+            clasificationbox.style.color="black";
         }else if(bmi > 25 ){
             clasification="Overweight";
-            results.style.background="#f4c983";
-            results.style.color="white";
+            clasificationbox.style.background="#f4c983";
+            clasificationbox.style.color="white";
         }else if(bmi >= 18.5 ){
             clasification="Normal Weight";
-            results.style.background="#a0b965";
-            results.style.color="black";
+            clasificationbox.style.background="#a0b965";
+            clasificationbox.style.color="black";
         }else {
             clasification="Underweight";  
-            results.style.background="#e6e1ee";
-            results.style.color="black";
+            clasificationbox.style.background="#e6e1ee";
+            clasificationbox.style.color="black";
         }
-
-        // if (bmi >= 40) {
-        //     clasification="Obesity Class III";
-        //     results.style.background="darkred";
-        //     results.style.color="white";
-
-        // }else if(bmi > 35 ){
-        //     clasification="Obesity Class II";
-        //     results.style.background="red";
-        //     results.style.color="white";
-        // }else if(bmi > 30){
-        //     clasification="Obesity Class I";
-        //     results.style.background="orange";
-        //     results.style.color="black";
-        // }else if(bmi > 25 ){
-        //     clasification="Overweight";
-        //     results.style.background="orange";
-        //     results.style.color="white";
-        // }else if(bmi >= 18.5 ){
-        //     clasification="Normal Weight";
-        //     results.style.background="lightgreen";
-        //     results.style.color="black";
-        // }else {
-        //     clasification="Underweight";  
-        //     results.style.background="lightblue";
-        //     results.style.color="black";
-        // }
 
         bmivalue.innerText= bmi;
         clasificationtext.innerText= clasification;
+
         window.localStorage.setItem("bmi", bmi);
+        results.style.display="block";
         
     }
     
-        // alert (bmi);
+    // alert (bmi);
 }
 function get_bmi() {
    bmi= window.localStorage.getItem("bmi")||0;
