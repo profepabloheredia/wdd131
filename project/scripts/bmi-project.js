@@ -36,6 +36,8 @@ function calculate(){
     
     let weight = parseInt(document.getElementById("weight").value)||0;
     let height = parseInt(document.getElementById("height").value)||0;
+    let textcolor;
+    let bgcolor;
     
     let clasification;
     if (weight && height !=0){
@@ -48,36 +50,49 @@ function calculate(){
             bmi = (bmi * 703).toFixed(1);
         }
         if (bmi >= 40) {
+            textcolor= "white";
+            bgcolor="#820e11";
             clasification="Obesity Class III";
-            clasificationbox.style.background="#820e11";
-            clasificationbox.style.color="white";
+            clasificationbox.style.background=bgcolor;
+            clasificationbox.style.color=textcolor;
 
         }else if(bmi > 35 ){
+            textcolor= "white";
+            bgcolor="#820e11";
             clasification="Obesity Class II";
             clasificationbox.style.background="#e85e3f";
             clasificationbox.style.color="white";
         }else if(bmi > 30){
+            textcolor= "black";
+            bgcolor="#ee8260";
             clasification="Obesity Class I";
-            clasificationbox.style.background="#ee8260";
-            clasificationbox.style.color="black";
+            clasificationbox.style.background=bgcolor;
+            clasificationbox.style.color=textcolor;
         }else if(bmi > 25 ){
+            textcolor= "black";
+            bgcolor="#f4c983";
             clasification="Overweight";
-            clasificationbox.style.background="#f4c983";
-            clasificationbox.style.color="white";
+            clasificationbox.style.background=bgcolor;
+            clasificationbox.style.color=textcolor;
         }else if(bmi >= 18.5 ){
+            textcolor= "black";
+            bgcolor="#a0b965";
             clasification="Normal Weight";
-            clasificationbox.style.background="#a0b965";
-            clasificationbox.style.color="black";
+            clasificationbox.style.background=bgcolor;
+            clasificationbox.style.color=textcolor;
         }else {
+            textcolor= "black";
+            bgcolor="#e6e1ee";
             clasification="Underweight";  
-            clasificationbox.style.background="#e6e1ee";
-            clasificationbox.style.color="black";
+            clasificationbox.style.background=bgcolor;
+            clasificationbox.style.color=textcolor;
         }
 
         bmivalue.innerText= bmi;
         clasificationtext.innerText= clasification;
-
         window.localStorage.setItem("bmi", bmi);
+        window.localStorage.setItem("background-color", bgcolor);
+        window.localStorage.setItem("text-color", textcolor);
         results.style.display="block";
         
     }
@@ -90,6 +105,9 @@ function get_bmi() {
     bmivalue2.innerText=bmi
     alert(bmi);
 
+}
+function loadbmi(){
+    get_bmi();
 }
 //footer content
 document.getElementById("currentyear").textContent = new Date().getFullYear();

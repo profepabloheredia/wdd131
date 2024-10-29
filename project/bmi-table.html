@@ -30,15 +30,18 @@
     </div>
   </header>
 
-  <div class:"left">
-      <button class="home"><a href="bmi-project.html"><h4>🏠 Home</h4></a><br></button>
+  <div class="subtitle">
+    <button class="home"><a href="bmi-project.html"><h4>🏠 Home</h4></a></button>
+    <div class="bmivalue2">
+      <h4>BMI : </h4><span id="bmivalue2"></span>
+    </div>
   </div>
 
   <main class="maintable">
 
     <div>         
       <h2>BMI Table</h2>                              
-      <div class="table parbase">
+      <div >
         <table width="100%" cellspacing="0" cellpadding="1" border="1"> <tbody>
             <tr>
               <td><b>Classification</b></td> <td><b>BMI</b></td> </tr>
@@ -111,3 +114,14 @@
 
   </body>
 </html>
+<script type="text/javascript">
+    window.onload = function loadbmi(){
+    const bmi= window.localStorage.getItem("bmi")||0;
+    const bmivalue2 = document.getElementById("bmivalue2");
+    bmivalue2.innerText=bmi;
+    
+    bmivalue2.style.color=window.localStorage.getItem("text-color")||"";
+    bmivalue2.style.background=window.localStorage.getItem("background-color")||"";
+    
+    }
+</script>
