@@ -51,11 +51,12 @@ header{
 /* home button style */
 .home {
     padding: 0;
-    border: ridge;
+    border:ridge;
     border-radius: 10px;
-    height: 25px;
+    height: 30px;
     width: 100px;
-    background-color: aquamarine;
+    border-width: 2px;
+    background-color: var(--background-color);
     text-align: center;
     margin-top: var(--margin);
 } 
