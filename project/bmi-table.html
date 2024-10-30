@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="styles/bmi-project.css">
   
     <script src="scripts/bmi-project.js" defer></script>
+    <script src="scripts/bmi-table.js" defer></script>
 
 </head>
 <body>
@@ -32,15 +33,16 @@
 
   <div class="subtitle">
     <button class="home"><a href="home.html"><h4>🏠 Home</h4></a></button>
-    <div class="bmivalue2">
-      <h4>BMI : </h4><span id="bmivalue2"></span>
-    </div>
+  
   </div>
 
   <main class="maintable">
 
     <div>         
-      <h2>BMI Table</h2>                              
+      <div></div><h2>Table</h2>  
+      <div class="bmivalue2">
+        <h4>Your BMI : </h4><span id="bmivalue2"></span>
+      </div>                              
       <div >
         <table width="100%" cellspacing="0" cellpadding="1" border="1"> <tbody>
             <tr>
@@ -85,20 +87,9 @@
             of mortality and other diseases or conditions. Generally, the higher
             your BMI, the greater the risk of developing other chronic
             obesity-related diseases, including:</p>
-           <ol> <li>Type II diabetes</li> <li>High blood sugar levels</li>
-              <li>High cholesterol levels</li> <li>High blood pressure</li>
-            <li>Infertility</li> <li>Depression and anxiety</li> <li>Coronary
-              heart disease like heart attack</li> <li>Dyslipidemia</li>
-              <li>Metabolic Dysfunction-associated Steatohepatitis (MASH) /
-              Metabolic Dysfunction-associated Steatotic Liver Disease
-            (MASLD)</li> <li>Gastroesophageal reflux disease (GERD)</li>
-              <li>Metabolic syndrome (MetS)</li> <li>Urinary incontinence</li>
-              <li>Obstructive sleep apnea and breathing problems</li> <li>Chronic
-              kidney disease</li> <li>Various types of cancer: including but not
-              limited to - breast, colon, endometrial, oesophageal, kidney,
-              ovarian, and pancreatic cancer</li> <li>Knee osteoarthritis</li>
-              <li>Gallstone disease</li> <li>Thrombosis</li> <li>Gout</li>
-            <li>Stroke</li> </ol>
+            
+            <div id="diseases"></div>
+
            <p>Ask your doctor for more information about any of these diseases and
             how they relate to your BMI. You can also learn more about the health
             benefits of losing weight here.</p>
@@ -115,13 +106,5 @@
   </body>
 </html>
 <script type="text/javascript">
-    window.onload = function loadbmi(){
-    const bmi= window.localStorage.getItem("bmi")||0;
-    const bmivalue2 = document.getElementById("bmivalue2");
-    bmivalue2.innerText=bmi;
     
-    bmivalue2.style.color=window.localStorage.getItem("text-color")||"";
-    bmivalue2.style.background=window.localStorage.getItem("background-color")||"";
-    
-    }
 </script>

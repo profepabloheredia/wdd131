@@ -26,7 +26,7 @@
             <ul class="menu" id="menu">
                 <li><a href="" title="Home">Home</a></li>
                 <li><a href="bmi-project.html" title="Old">BMI calculator</a></li>
-                <li><a href="bmi-table.html" title="New">BMI value table</a></li>
+                <li><a href="bmi-table.html" title="New" onclick="clearBmi()">BMI value table</a></li>
                 
             </ul>
         </nav>
@@ -46,11 +46,11 @@
                     <figcaption>BMI can be calculated using metric or imperial (US) units. You can calculate your BMI using an online BMI calculator or with the formula: BMI = (weight in pounds x 703) / (height in inches x height in inches). </figcaption>
                 </figure>
                 <figure>
-                    <img src="images/bmi-imagefor-children.jpg" alt="cordoba temple"  width="250" loading="lazy">
-                    <figcaption>Córdoba Argentina Temple</figcaption>
+                    <img src="images/bmi-imagefor-children.jpg" id="children-table" alt="cordoba temple"  width="250" loading="lazy">
+                    <figcaption>Full children Table</figcaption>
                 </figure>
                 <figure>
-                    <img src="images/bmi-children-to-adult.jpg" alt="children adult comparition"  width="250" loading="lazy" >
+                    <img src="images/bmi-children-to-adult.jpg"  id="children-comparition" alt="children adult comparition"  width="250" loading="lazy" onclick="pullup()">
                     <figcaption>Children and adult comparition BMI</figcaption>
                 </figure>
                
@@ -65,6 +65,13 @@
                     <li><a href="https://www.cdc.gov/bmi/about/index.html">CDC BMI </a></li>
                     
                 </ul>
+                <div>
+                    <br><h2>Why is BMI important?</h2>
+                    <h5>    BMI is a good way to check your risk of diseases related to body fat. Living with overweight or obesity is associated with an increased risk of mortality and other diseases or conditions. Generally, the higher your BMI, the greater the risk of developing other chronic obesity-related diseases, including:
+                        
+                        Ask your doctor for more information about any of these diseases and how they relate to your BMI. You can also learn more about the health benefits of losing weight here.
+                    </h5>
+                </div>
                 
             </section>
                      

@@ -127,4 +127,7 @@ img{
 i{
     font-size: small;
 }
-
+.bmivalue2{
+    align-items: center;
+    text-align: right;
+}

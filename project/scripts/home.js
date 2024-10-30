@@ -8,7 +8,12 @@ hambutton.addEventListener('click', () =>{
     
 });
 
-
+function pullup(){
+    
+}
+function clearBmi(){
+    window.localStorage.setItem("bmi", 0);
+}
 
 document.getElementById("currentyear").textContent = new Date().getFullYear();
 
