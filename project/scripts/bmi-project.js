@@ -103,7 +103,7 @@ function get_bmi() {
    bmi= window.localStorage.getItem("bmi")||0;
    const bmivalue2 = document.getElementById("bmivalue2");
     bmivalue2.innerText=bmi
-    alert(bmi);
+    
 
 }
 function loadbmi(){
