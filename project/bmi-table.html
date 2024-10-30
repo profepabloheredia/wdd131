@@ -39,14 +39,27 @@
   <main class="maintable">
 
     <div>         
-      <div></div><h2>Table</h2>  
-      <div class="bmivalue2">
-        <h4>Your BMI : </h4><span id="bmivalue2"></span>
-      </div>                              
+      <div></div>  
+                                   
       <div >
-        <table width="100%" cellspacing="0" cellpadding="1" border="1"> <tbody>
+        <table> 
+          <thead>
             <tr>
-              <td><b>Classification</b></td> <td><b>BMI</b></td> </tr>
+              <th colspan="2" scope="colgroup"><h2>Table</h2></th>
+            </tr>
+            <tr class="bmi-block">
+              <th colspan="1" >
+                  <h4>Your BMI : </h4>
+               </th>
+              <th colspan="2" >
+              <span id="bmi-value"></span>
+             
+            </th>
+            </tr>
+        </thead>
+          <tbody>
+            <tr>
+              <th><b>*Classification</b></th> <th><b>BMI</b></th> </tr>
             <tr>
               <td><a href="https://www.truthaboutweight.global/global/en/managing-your-weight/understanding-your-bmi-result.html#underweight">Underweight</a></td>
                 <td>Below 18.5</td> </tr>
@@ -74,8 +87,7 @@
           <p>
             <i>*Classification given by the World Health Organization (WHO). This
               BMI calculator is for adults 20 years or older. Talk to your doctor
-              about your BMI if you're under the age of 20. BMI classification are
-              based on WHO BMI classification.</i></p>
+              about your BMI.</i></p>
          </div>
         <div class="text">
           <div class="title title--xxs">

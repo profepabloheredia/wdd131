@@ -111,14 +111,17 @@ img{
     align-content: space-between;
 }
 
-.bmivalue2 {
+
+ /* bmi-table part */
+/* .bmivalue2 {
+    
     grid-column: 3;
     display: flex;
     flex-direction: row;
     text-align: right;
     align-items: center;
     font-weight: bold;
-} 
+}  */
 .text-list { 
     text-align: left;
     padding: var(--padding);
@@ -127,7 +130,38 @@ img{
 i{
     font-size: small;
 }
-.bmivalue2{
-    align-items: center;
-    text-align: right;
+
+table{
+    width: 100%;
+    padding: auto;
+    margin: 10px auto;
+	border: thin solid black;
+	box-shadow: 0 0 10px hsl(0,0%,50%);
+	border-collapse: collapse;
 }
+
+  tr:first-child th, .black {
+      background-color: var(--secondary-color);
+      color: whitesmoke;
+  }
+  
+  th, td {
+      padding: 7px 15px;
+      border: 1px solid hsla(0,0%,33%,.3);
+      border-radius: var(--border-radius);
+  }
+  
+  th {
+      background-color: var(--background-color);
+      font-size: larger;
+  }  
+  td {
+      text-align: center;
+  }
+  .bmi-block{
+    padding: 0;
+    text-align: center;
+    align-items: center;
+    font-weight: bold;
+    
+  }

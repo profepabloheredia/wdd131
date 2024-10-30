@@ -2,7 +2,7 @@
 
 :root {
     --primary-color:black;
-    --secondary-color: #2400a8;
+    --secondary-color: #01133b;
     --title-color:white;
     --title-background:#183a16; 
     --subtitle-color:#2400a8;
@@ -34,7 +34,7 @@ header, footer{
     background-color: var(--title-background);
     color: var(--title-color);
     border-color:var(--title-background);
-    padding: 1rem;
+    padding: 0 1rem ;
     border-style: solid;
     border-width: 1px;
     height: auto;

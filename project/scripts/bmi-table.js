@@ -1,14 +1,17 @@
 window.onload = function loadbmi(){
     const bmi= window.localStorage.getItem("bmi")||0;
-    const bmivalue2 = document.getElementById("bmivalue2");
-    bmivalue2.innerText=bmi;
-    const bmiBlock = document.querySelector('.bmivalue2');
-    bmiBlock.style.color=window.localStorage.getItem("text-color")||"";
-    bmiBlock.style.background=window.localStorage.getItem("background-color")||"";
+    const bmivalue = document.getElementById("bmi-value");
+    bmivalue.innerText=bmi;
+    
+    const bmiBlock = document.querySelector('.bmi-block');
+    
+    bmivalue.style.color=window.localStorage.getItem("text-color")||"";
+    bmivalue.style.background=window.localStorage.getItem("background-color")||"";
     
     if (bmi==0){
-        bmiBlock.style.color="white";
-        bmiBlock.style.background="white";
+        bmiBlock.style.display="none";
+        // bmiBlock.style.color="white";
+        // bmiBlock.style.background="white";
     }
     const diseases = [
         "Type II diabetes",
