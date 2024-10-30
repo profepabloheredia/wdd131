@@ -113,7 +113,7 @@ figure {
     height: auto;
     margin: auto;
     text-align: center;
-    padding: auto;
+    padding: var(--padding);
 }
 figure img {
     width: 250px;
