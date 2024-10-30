@@ -10,8 +10,6 @@ window.onload = function loadbmi(){
     
     if (bmi==0){
         bmiBlock.style.display="none";
-        // bmiBlock.style.color="white";
-        // bmiBlock.style.background="white";
     }
     const diseases = [
         "Type II diabetes",
